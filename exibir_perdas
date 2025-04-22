@@ -1,0 +1,15 @@
+# Função para exibir as perdas
+def exibir_perdas():
+    if len(perdas) == 0:
+        print("Não há perdas cadastradas.")
+    else:
+        print("Perdas Registradas:")
+        for perda in perdas:
+            print(f"ID Perda: {perda['id_perda']}")
+            print(f"ID Colheita: {perda['id_colheita']}")
+            print(f"Tipo de Perda: {perda['tipo_perda']}")
+            print(f"Quantidade Perda (toneladas): {perda['quantidade_toneladas']}")
+            print("----------------------")
+
+
+
