@@ -1,0 +1,15 @@
+def executar_simulacoes():
+    resultados = []
+    for tipo in ["manual", "mecanizada"]:
+        resultado = simular_colheita(1000, tipo)
+        resultados.append(resultado)
+
+    salvar_csv(resultados)
+    inserir_banco(resultados)
+
+    melhor = min(resultados, key=lambda x: x["prejuizo"])
+    print(f"A colheita mais eficiente foi: {melhor['tipo']} com prejuízo de R$ {melhor['prejuizo']:.2f}")
+
+executar_simulacoes()
+
+
