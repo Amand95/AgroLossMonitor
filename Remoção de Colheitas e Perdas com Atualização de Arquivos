@@ -1,5 +1,15 @@
 import json
 
+# Adicionar colheita
+def adicionar_colheita(colheitas, nova_colheita):
+    colheitas.append(nova_colheita)
+    with open('colheitas.json', 'w') as json_file:
+        json.dump(colheitas, json_file, indent=4)
+    with open('colheitas.txt', 'w') as txt_file:
+        for item in colheitas:
+            txt_file.write(f"{item}\n")
+    print("Colheita adicionada com sucesso!")
+
 # Remover colheita
 def remover_colheita(colheitas, indice):
     if 0 <= indice < len(colheitas):
@@ -13,6 +23,16 @@ def remover_colheita(colheitas, indice):
     else:
         print("Índice inválido.")
 
+# Adicionar perda
+def adicionar_perda(perdas, nova_perda):
+    perdas.append(nova_perda)
+    with open('perdas.json', 'w') as json_file:
+        json.dump(perdas, json_file, indent=4)
+    with open('perdas.txt', 'w') as txt_file:
+        for item in perdas:
+            txt_file.write(f"{item}\n")
+    print("Perda adicionada com sucesso!")
+
 # Remover perda
 def remover_perda(perdas, indice):
     if 0 <= indice < len(perdas):
@@ -25,3 +45,4 @@ def remover_perda(perdas, indice):
         print("Perda removida com sucesso!")
     else:
         print("Índice inválido.")
+
