@@ -1,0 +1,8 @@
+
+### Passos para atualização no GitHub:
+1. Crie o arquivo `README.md` com este conteúdo na raiz do repositório.
+2. Comite as alterações:
+   ```bash
+   git add README.md
+   git commit -m "Adiciona README para o projeto Cineio"
+   git push origin main
