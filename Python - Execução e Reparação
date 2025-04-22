@@ -12,4 +12,3 @@ def executar_simulacoes():
 
 executar_simulacoes()
 
-
