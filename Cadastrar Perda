@@ -1,0 +1,10 @@
+perdas = []
+
+def cadastrar_perda(id_perda, id_colheita, tipo_perda, quantidade):
+    perda = {
+        'id_perda': id_perda,
+        'id_colheita': id_colheita,
+        'tipo_perda': tipo_perda,
+        'quantidade_toneladas': quantidade
+    }
+    perdas.append(perda)
