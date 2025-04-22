@@ -3,6 +3,8 @@
 ## 📌 Objetivo
 Simular e comparar perdas econômicas em colheitas de cana-de-açúcar realizadas de forma manual e mecanizada.
 
+É uma solução de monitoramento e gestão de perdas na colheita de cana-de-açúcar, utilizando sensores para otimizar a produtividade e minimizar prejuízos.
+
 ## 💡 Tecnologias
 - Python 3
 - cx_Oracle
